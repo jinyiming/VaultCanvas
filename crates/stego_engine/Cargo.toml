@@ -1,0 +1,18 @@
+[package]
+name = "stego_engine"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+aes.workspace = true
+cbc.workspace = true
+common = { path = "../common" }
+cipher.workspace = true
+flate2.workspace = true
+pbkdf2.workspace = true
+rand.workspace = true
+serde.workspace = true
+sha1.workspace = true
+sha2.workspace = true
+zeroize.workspace = true

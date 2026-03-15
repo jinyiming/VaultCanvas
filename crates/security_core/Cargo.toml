@@ -1,0 +1,16 @@
+[package]
+name = "security_core"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[lib]
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+common = { path = "../common" }
+crypto_engine = { path = "../crypto_engine" }
+flutter_rust_bridge = "=2.11.1"
+password_engine = { path = "../password_engine" }
+serde.workspace = true
+stego_engine = { path = "../stego_engine" }

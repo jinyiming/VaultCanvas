@@ -1,0 +1,18 @@
+# Rust build outputs
+/target/
+/target_sizeopt/
+/target_temp/
+
+# Benchmark artifacts
+/dist/benchmarks/
+
+# Temporary packaging workspace
+/dist/_single_build/
+
+# Keep only final distributables under dist
+/dist/windows-native/
+/dist/VaultCanvas-Windows-Single.exe
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+[package]
+name = "bench_runner"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+security_service = { path = "../security_service" }

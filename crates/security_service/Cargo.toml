@@ -1,0 +1,12 @@
+[package]
+name = "security_service"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+common = { path = "../common" }
+crypto_engine = { path = "../crypto_engine" }
+password_engine = { path = "../password_engine" }
+stego_engine = { path = "../stego_engine" }
+serde.workspace = true

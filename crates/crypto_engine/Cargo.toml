@@ -1,0 +1,14 @@
+[package]
+name = "crypto_engine"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+argon2.workspace = true
+aes-gcm.workspace = true
+common = { path = "../common" }
+rand.workspace = true
+serde.workspace = true
+sha3.workspace = true
+zeroize.workspace = true

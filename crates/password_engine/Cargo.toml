@@ -1,0 +1,12 @@
+[package]
+name = "password_engine"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[dependencies]
+blake3.workspace = true
+common = { path = "../common" }
+rand.workspace = true
+serde.workspace = true
+zeroize.workspace = true
