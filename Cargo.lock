@@ -3937,12 +3937,28 @@ dependencies = [
 ]
 
 [[package]]
-name = "vaultcanvas_windows_native"
+name = "vaultcanvas_macos_native"
+version = "0.1.0"
+dependencies = [
+ "eframe",
+ "vaultcanvas_native_gui",
+]
+
+[[package]]
+name = "vaultcanvas_native_gui"
 version = "0.1.0"
 dependencies = [
  "eframe",
  "rfd",
  "security_service",
+]
+
+[[package]]
+name = "vaultcanvas_windows_native"
+version = "0.1.0"
+dependencies = [
+ "eframe",
+ "vaultcanvas_native_gui",
  "winres",
 ]
 

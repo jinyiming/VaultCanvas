@@ -1,5 +1,7 @@
 [workspace]
 members = [
+  "apps/macos_native",
+  "apps/native_gui",
   "apps/windows_native",
   "crates/bench_runner",
   "crates/common",

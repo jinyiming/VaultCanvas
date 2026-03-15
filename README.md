@@ -1,10 +1,12 @@
 # VaultCanvas
 
-Local-first file security tool. The current production target is the native Rust Windows GUI.
+Local-first file security tool with shared Rust core and native desktop shells (Windows/macOS).
 
 ## Workspace Layout
 
-- `apps/windows_native`: native desktop GUI (`eframe`/`egui`)
+- `apps/native_gui`: shared native GUI logic (`eframe`/`egui`)
+- `apps/windows_native`: Windows desktop entrypoint
+- `apps/macos_native`: macOS desktop entrypoint
 - `crates/common`: shared errors and result types
 - `crates/password_engine`: password algorithm implementation
 - `crates/crypto_engine`: file encryption/decryption implementation
@@ -23,7 +25,7 @@ Local-first file security tool. The current production target is the native Rust
 
 ## Local Verification
 
-- `cargo check -p vaultcanvas_windows_native`
+- `cargo check -p vaultcanvas_windows_native -p vaultcanvas_macos_native`
 - `cargo test -p password_engine -p crypto_engine -p stego_engine`
 - `& .\scripts\benchmark_engines.ps1 -SizesMb @(4,16,64)`
 
@@ -32,4 +34,5 @@ Local-first file security tool. The current production target is the native Rust
 - Main EXE: `dist/windows-native/VaultCanvas.exe`
 - Single EXE package script: `scripts/package_windows_single.ps1`
 - Portable folder package script: `scripts/package_windows_portable.ps1`
+- macOS app package script: `scripts/package_macos_app.sh`
 - Benchmark reports: `dist/benchmarks/<timestamp>/benchmark.{json,md}`

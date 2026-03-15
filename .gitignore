@@ -12,6 +12,8 @@
 # Keep only final distributables under dist
 /dist/windows-native/
 /dist/VaultCanvas-Windows-Single.exe
+/dist/VaultCanvas.app/
+/dist/VaultCanvas-macOS.zip
 
 # OS / editor noise
 .DS_Store

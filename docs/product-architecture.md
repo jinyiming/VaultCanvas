@@ -18,6 +18,15 @@ VaultCanvas is a local security utility with three core functions:
 
 ```text
 apps/windows_native
+    -> apps/native_gui
+        -> crates/security_service
+            -> crates/password_engine
+            -> crates/crypto_engine
+            -> crates/stego_engine
+            -> crates/common
+
+apps/macos_native
+    -> apps/native_gui
     -> crates/security_service
         -> crates/password_engine
         -> crates/crypto_engine
@@ -66,4 +75,5 @@ crates/bench_runner
 - Primary artifact: `dist/windows-native/VaultCanvas.exe`
 - Single EXE package: `scripts/package_windows_single.ps1`
 - Portable package folder: `scripts/package_windows_portable.ps1`
+- macOS app bundle script: `scripts/package_macos_app.sh`
 - Benchmark entrypoint: `scripts/benchmark_engines.ps1`

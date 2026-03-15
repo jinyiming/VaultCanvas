@@ -1,5 +1,3 @@
-#![cfg_attr(target_os = "windows", windows_subsystem = "windows")]
-
 fn main() -> eframe::Result<()> {
     vaultcanvas_native_gui::run_app()
 }

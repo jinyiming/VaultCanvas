@@ -1,0 +1,14 @@
+[package]
+name = "vaultcanvas_native_gui"
+edition.workspace = true
+license.workspace = true
+version.workspace = true
+
+[lib]
+name = "vaultcanvas_native_gui"
+path = "src/lib.rs"
+
+[dependencies]
+eframe = "0.31"
+rfd = "0.15"
+security_service = { path = "../../crates/security_service" }
